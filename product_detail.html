@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/product_detail.css">
+ </head>
+ <body>
+  <div class="main">
+		<!--1.页面头部-->
+		<header id="header"></header>
+		<!--2.详情页-->
+		<div class="product-detail-page yoho-page">
+			<!-- 1.红色顶部 -->
+			<div class="brand-banner">
+				<div class="center-content clearfix">
+					<a href="#" class="left">
+						<img src="img/product_img/0101e53b5baede50278b0b20b69b301f27.jpg" alt="芍藥居少女原创设计">
+					</a>
+					<div class="opt right">
+						<a href="#" class="home">
+							<span class="glyphicon glyphicon-home"></span>
+						</a>
+						<a href="#" class="heart">
+							<span class="glyphicon glyphicon-heart"></span>
+							<span style="font-size:13px">6798</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!-- 2.主体部分 -->
+			<div class="center-content">
+				<!--1.面包屑导航 ：#bread-crumb -->
+				<div id="bread-crumb" class="path-nav">
+				  <!-- <a href="javascript:;">GIRLS首页</a>
+				  <span>&gt;</span>
+				  <a href="javascript:;">芍藥居少女原创设计 阿绿君的吊带 背心</a>
+				  <span>&gt;</span>
+				  <span id="fname"></span> -->
+				</div>
+				<!--2.商品详情展示-->
+				<div id="product-details">
+					<!-- 上： 左：图片部分 -->
+					<div id="preview" class="pull-left imgs clearfix">
+						<!-- 左：图片部分 中 大 -->
+						<div id="mediumDiv" class="pull-left img">
+							<img id="mImg">
+							<div id="mask"></div>
+							<div id="superMask"></div>
+						</div>
+						<div id="largeDiv"></div>
+						<div class="pics">
+							<ul id="icon_list">
+							<!-- <li class="i1">
+									<img src="${pic.sm}" data-md="${pic.md}" data-lg="${pic.lg}">
+								</li> -->
+							</ul>
+						</div>
+						<div class="share_now">
+							<span class="title pull-left">分享：</span>
+							<span class="share-wrapper pull-left">
+								<i class="weibo bgpic" title="分享到新浪微博"></i>
+								<i class="weixin bgpic" title="分享到微信朋友圈"></i>
+								<i class="qzone bgpic" title="分享到QQ空间"></i>
+								<i class="qq bgpic" title="分享到QQ好友"></i>
+							</span>
+						</div>
+					</div>
+					<!-- 上： 右：文字部分 -->
+					<div id="show-details" class="pull-right infos">
+						<h1 class="name"></h1>
+						<div class="line"></div>
+						<p class="market-price">
+							<span class="price-row">
+								<span class="title">吊牌价：</span>
+								<span class="price has-other-price"></span>
+								<br>
+								<span class="promotion-price">
+									<span class="title">促销价：</span>
+									<span class="price"></span>
+								</span>
+								<span class="desc">
+									<span class="promotion"></span>
+									<span class="vip-price">
+										<span class="unlogin">
+											登录后即可查看vip价格
+										</span>
+										<a href="#" class="login-url" id="alogin">立即登录</a>
+									</span>
+								</span>
+							</span>
+						</p>
+						<div class="row activity-wrapper clearfix">
+							<span class="title pull-left">促  销：</span>
+							<div class="activity-container">
+								<ul class="activity">
+									<li class="promotion-item">
+										<span class="ac-type">加价购</span>
+										<span class="ac-des">
+											<span>全场任意消费加5元换购YOHO!当期热销新刊！</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+							<div class="pull-left">
+								<ul class="activity">
+									<li class="promotion-item">
+										<span class="ac-type">加价购</span>
+										<span class="ac-des">
+											<span>全场任意消费加5元换购YOHO!当期热销新刊！</span>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="small-coupon-list">
+							<ul>
+								<li>
+									<a class="left title">领  券：</a>
+								</li>
+								<li class="more-coupon">
+									<div class="small coupon-item" data-id="a6LDCAb0YfFtQ4F4Ej+wWA==" data-name="【年中热促】满399减40" data-amount="40" data-status="1" data-rule="满¥399减¥40">
+										<a class="more-coupon small-desc">满¥300减¥40</a>
+									</div>
+								</li>
+								<li class="more-coupon">
+									<div class="small coupon-item" data-id="YDQvZOhMZcJFaCbp4oLnpg==" data-name="【年中热促】满499减60" data-amount="60" data-status="1" data-rule="满¥499减¥60">
+										<a class="more-coupon small-desc">满¥499减¥60</a>
+									</div>
+								</li>
+								<li class="more-coupon">
+									<div class="small coupon-item" data-id="QJkjypIlQUhu1tkvKhId1A==" data-name="【年中热促】满699减80" data-amount="80" data-status="1" data-rule="满¥699减¥80">
+										<a class="more-coupon small-desc">满¥699减¥80</a>
+									</div>
+								</li>
+								<li>
+									<a class="left more-coupon small-suf">更多</a>
+								</li>
+								<li class="hide" style="display:none">
+									<div class="small coupon-item" data-id="kNSlUltcRIqVl88F+di7Cg==" data-name="【年中热促】满899减100" data-amount="100" data-status="1" data-rule="满¥899减¥100">
+										<a class="more-coupon small-desc">满¥899减¥100</a>
+									</div>
+								</li>
+							</ul>
+						</div>	
+						<div class="line"></div>
+						<div class="trade-content">
+							<div id="type-chose" class="type-chose">
+								<div class="chose-color row clearfix">
+									<span class="title pull-left">颜  色:</span>
+									<ul class="colors pull-left clearfix" id="color-section">
+										<!--<li class="focus pull-left" title="芍藥居少女原创设计  阿绿君的吊带  背..." data-color="绿色" data-total="22">
+											<a href="#" id="xs">
+											<img alt="芍藥居少女原创设计  阿绿君的吊带  背...">
+											<span class="color-name">绿色</span>	
+											</a>
+										</li>-->
+									</ul>
+								</div>
+								<div class="chose-size row clearfix">
+									<span class="title pull-left">尺  码: </span>
+									<div class="size-wrapper pull-left">
+										<ul class="size" id="sizes">
+											<li data-size="S">S</li>
+											<li data-size="M">M</li>
+                                            <li data-size="L">L</li>
+										</ul>
+										<p class="size-warn warn-tip" id="tip-chose-size" style="display:none">
+											"请先选择尺码"
+										</p>
+									</div>
+								</div>
+								<div class="chose-count row clearfix">
+									<span class="title pull-left">数  量: </span>
+									<div class="num-wrapper pull-left clearfix" id="add-reduce">
+										<span class="reduce">-</span>
+										<input type="text" value="1"></input>
+										<span class="add">+</span>
+									</div>
+								</div>
+								<div class="line"></div>
+								<span id="shopping-red-section" class="btn-buy item-buy add-to-cart">
+									<!-- <a href="javascript:;" data-cid="${cid}" class="addCart">
+										<span class="glyphicon glyphicon-shopping-cart"></span>加入购物车
+									</a> -->
+								</span>
+								<span id="collect-product" class="collect-product">
+									<span class="glyphicon glyphicon-heart"></span>
+									<span>收藏商品</span>
+								</span>
+								<div id="code-buy" class="code-buy" skn="51893408">
+									<div class="code-box">
+										<div class="code-img"></div>
+										<div class="code-font">
+											<span>手机客户端</span><br>
+											<span>扫一扫购买</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 下 -->
+					<div class="total-content">
+						<div class="other-infos">
+							<div class="description-material info-block head getnav" id="goodsMessage" data-id="0">
+								<p class="block-title">
+									<span class="title-head">
+										<span class="title cur">商品信息</span>
+									</span>
+								</p>
+								<div class="description-content" id="product-msg">
+									<ul class="basic clearfix">
+										<li>
+											<em class="justposition">
+												<span class="keySpace">编  号:</span>
+												<span class="value-space"></span>
+											</em>
+										</li>
+										<li>
+											<em class="justposition" style="margin-left:56px;">
+												<span class="keySpace">颜  色:</span>
+												<span id="desc-color" title="绿色" class="value-space">绿色</span>
+											</em>
+										</li>
+										<li>
+											<em class="justposition" style="margin-left:56px;">
+												<span class="keySpace">性  别:</span>
+												<span id="desc-color" title="绿色" class="value-space"></span>
+											</em>
+										</li>
+										<li>
+											<em class="justposition" style="display:inline-block;margin-left:70px;">
+												<span class="keySpace">经典款型:</span>
+												<span class="value-space"></span>
+											</em>
+										</li>
+										<li>
+											<em class="justposition">
+												<span class="keySpace">领  型:</span>
+												<span class="value-space"></span>
+											</em>
+										</li>
+										<li>
+											<em class="justposition" style="margin-left:56px">
+												<span class="keySpace">衣  长:</span>
+												<span class="value-space"></span>
+											</em>
+										</li>
+										<li>
+											<em class="justposition" style="margin-left:56px">
+												<span class="keySpace">版  型:</span>
+												<span class="value-space"></span>
+											</em>
+										</li>
+										<li>
+											<em class="justposition" style="display:inline-block;margin-left:70px">
+												<span class="keySpace">厚  度:</span>
+												<span class="value-space"></span>
+											</em>
+										</li>
+									</ul>
+									<ul class="comfort clearfix" id="black-box">
+										<li class="pull-left">
+											<span class="comfort-title">弹  性：</span>
+											<span class="min-des">小</span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="max-des">大</span>
+										</li>
+										<li class="pull-left">
+											<span class="comfort-title">厚  度：</span>
+											<span class="min-des">薄</span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="max-des">厚</span>
+										</li>
+										<li class="pull-left">
+											<span class="comfort-title">柔软度：</span>
+											<span class="min-des">软</span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="max-des">硬</span>
+										</li>
+										<li class="pull-left">
+											<span class="comfort-title">透气性：</span>
+											<span class="min-des">弱</span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="comfort-block"></span>
+											<span class="max-des">强</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="details info-block getnav" id="goodsInside" data-id="2">
+								<p class="block-title" id="goodsTitle">
+									<span class="title-head">
+										<span class="title cur">商品详情</span>
+									</span>
+								</p>
+								<div id="details-html" class="details-html">
+									<p></p>
+									<p>
+										<img>
+									</p>
+									<p>
+										<img class="lazy">
+									</p>
+								</div>
+							</div>
+							<div class="details info-block getnav" id="goodsInside" data-id="2">
+								<p class="block-title" id="goodsAsk">
+									<span class="title-head">
+										<span class="title cur">商品咨询</span>
+									</span>
+								</p>
+								<div class="questions">
+									<div>
+										<p class="fblack">1.商品都是正品吗？</p>
+										<p>有货www.yohobuy.com所售的商品均经品牌授权， 正品保障，支持专柜验货，与您亲临商场选购的商品一样享受相同的质量保证， 请您放心购买。</p>
+									</div>
+									<div>
+										<p class="fblack">2.尺码表上的尺码标准吗？</p>
+										<p>有货所售商品尺寸均为人工实物测量，可能会存在1-2cm的正常误差范围。</p>
+									</div>
+									<div>
+										<p class="fblack">3.图片颜色和实物颜色相同吗？</p>
+										<p>有货所有商品均采用实物专业拍摄，但由于个人显示器不同，可能导致实物与图片存在色差，最终颜色以实物为准。</p>
+									</div>
+									<div>
+										<p class="fblack">4.发货及配送</p>
+										<p>当天下午3点前订单当天发，之后的订单隔天发，合作快递有：韵达、EMS、顺丰、申通、圆通、宅急送，普通快递3-5天左右送达，顺丰速运1-2天送达。</p>
+									</div>
+									<div>
+										<p class="fblack">5.退货or换货</p>
+										<p>签收商品未经穿着不影响二次销售的情况下，7日内退货，15日内换货； 退回商品保证吊牌、标签、包装完整。 </p>
+									</div>
+								</div>
+							</div>
+							<div class="details info-block getnav" id="goodsInside" data-id="2">
+								<p class="block-title" id="goodChange">
+									<span class="title-head">
+										<span class="title cur">退换货流程</span>
+									</span>
+								</p>
+								<div class="goodsChange">
+									<img src="img/product_img/20180730215722.png" alt="">
+								</div>
+							</div>
+							<div class="details info-block getnav" id="goodsInside" data-id="2">
+								<p class="block-title" id="goodChange">
+									<span class="title-head">
+										<span class="title cur">有货承诺</span>
+									</span>
+								</p>
+								<div class="promise">
+									<img src="img/product_img/20180730215745.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="footer">
+		</footer>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/product_detail.js"></script>
+  <script src="js/footer.js"></script>
+ </body>
+</html>

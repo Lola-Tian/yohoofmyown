@@ -1,0 +1,120 @@
+/*上：图*/
+div.content{
+	width:100%;
+	min-height:600px;
+}
+div.content>div.top-area>img{
+	width:100%;
+	height:160px;
+	position:relative;
+}
+div.content>div.top-area>.opt-wrap{
+	width:100%;
+	height:32px;
+	position:absolute;
+	top:260px;
+	margin-top:-16px;
+	text-align:right;
+}
+div.content>div.top-area>.opt-wrap>.center-content{
+	width:990px;
+}
+div.content>div.top-area>.opt-wrap>.center-content>a{
+	display:inline-block;
+	height:20px;
+	line-height:20px;
+	padding:5px 10px;
+	margin-right:5px;
+	color:#fff;
+	font-size:12px;
+	border:1px solid #fff;
+}
+/*中：排序方式*/
+div.content>div.top-area>.sort-pager{
+	height:48px;
+	line-height:48px;
+	background:#f5f7f6;
+	margin:10px 0;
+	padding-left:50px;
+}
+div.content>div.top-area>.sort-pager>.sort-type{
+	color:#999;
+	font-size:12px;
+	padding:0 10px;
+}
+/*下：产品展示*/
+div.content>div.top-area>#product-list>#plist{
+	width:990px;
+	min-height:250px;
+	margin:0 auto;
+}
+div.content>div.top-area>#product-list>#plist>#show-list{
+	display:flex;
+	/* justify-content:space-between; */
+	flex-wrap:wrap;
+	padding-top:20px;
+	padding:10px 10px;
+}
+div.content>div.top-area>#product-list>#plist>#show-list>li{
+	width:215px;
+	margin:0px 10px 30px 10px;
+	border:1px solid #ddd;
+	text-align:center;
+	box-sizing:border-box;
+	padding:0 3px 3px;
+}
+div.content>div.top-area>#product-list>#plist>#show-list>li img{
+	width:195px;
+	height:261px;
+	transition:all .3s linear;
+}
+div.content>div.top-area>#product-list>#plist>#show-list>li img:hover{
+	transform:scale(1.008);
+}
+div.content>div.top-area>#product-list>#plist>#show-list>li span.price{
+	display:block;
+	color:#000;
+	font-size:12px;
+}
+div.content>div.top-area>#product-list>#plist>#show-list>li>p{
+	text-align:left;
+	margin-bottom:15px;
+}
+
+div.content>div.top-area>#product-list>#plist>#show-list>li>p>a{
+	font-size:12px;
+	margin-top:16px;
+	display:block;
+	line-height:1.5;
+	color:#000;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+/*页码*/
+div.content>div.top-area>#product-list>#plist>#pages{
+	padding:0px 20px;
+	text-align:right;
+	font-size:12px;
+	height:40px;
+}
+div.content>div.top-area>#product-list>#plist>#pages>a{
+	padding:4px 10px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	color:#0aa1ed;
+	margin-right:5px;
+}
+div.content>div.top-area>#product-list>#plist>#pages>a:last-child{
+	margin-right:40px;
+}
+div.content>div.top-area>#product-list>#plist>#pages a.current{
+	border-color:#0aa1ed;
+	background:#0aa1ed;
+	color:#fff;
+}
+div.content>div.top-area>#product-list>#plist>#pages a.disabled{
+	color:#bfbfbf;
+	background:#f2f2f2;
+	border:1px solid #bfbfbf;
+}

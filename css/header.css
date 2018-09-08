@@ -1,0 +1,394 @@
+/******************************************最顶部长条******************************************************/
+.yoho-header{
+	width:1076.8px;
+	background-color:#F4F4F4;
+	font-size:12px;
+	line-height:32px;
+}
+/*中部内容区域*/
+.yoho-header>div.top-area{
+	width:90%;
+	margin:0 auto;
+}
+.yoho-header>div.top-area>div.lf{
+	float:left;
+}
+.yoho-header>div.top-area>div.rf{
+	color:#8E8E8E;
+	float:right;
+}
+.yoho-header>div.top-area:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+.yoho-header>div.top-area>div.rf ul li{
+	float:left;
+	margin-right:8px;
+}
+.yoho-header>div.top-area>div.rf>ul>li>span.weChat{
+	color:#86BF4A;
+}
+.yoho-header>div.top-area>div.rf>ul>li>span.phone{
+	color:#D0021B;
+}
+/*最右侧弹出框设置*/
+.yoho-header>div.top-area>div.rf>ul>li.app{
+	position:relative;
+}
+.yoho-header>div.top-area>div.rf>ul>li.app>div.code{
+	width:146px;
+	height:216px;
+	background-color:#f4f4f4;
+	text-align:center;
+	position:absolute;
+	left:-35px;
+	display:none;
+}
+.yoho-header>div.top-area>div.rf>ul>li.app:hover div.code{
+	display:block;
+	z-index:100;
+}
+.yoho-header>div.top-area>div.rf>ul>li.app:hover{
+	cursor:pointer;
+}
+.yoho-header>div.top-area>div.rf>ul>li.app>div.code>h5{
+	color:black;
+}
+.yoho-header>div.top-area>div.rf>ul>li.app>div.code p{
+	line-height:5px;
+	font-weight:bold;
+	color:black;
+}
+/*客户服务及下拉列表*/
+.yoho-header>div.top-area div.rf li.customer-service{
+	display:inline-block;
+	height:32px;
+	/* border:3px solid red; */
+}
+.yoho-header>div.top-area div.rf ul.customer{
+	top:32px;
+	margin-left:-12px;
+	width:88px;
+	position:absolute;
+	background-color:#eaeceb;
+	z-index:100;
+}
+.yoho-header>div.top-area div.rf ul.customer>li{
+	width:88px;
+	height:32px;
+	line-height:32px;
+	border-top:1px solid #c9c9c9;
+	text-align:center;
+}
+.yoho-header>div.top-area div.rf ul.customer>li>a{
+	display:inline-block;
+	width:88px;
+	height:33px;
+	line-height:33px;
+	
+}
+/************************************************中部**************************************************/
+.yoho-header .middle-area{
+	width:100%;
+	height:90px;
+}
+.yoho-header .middle-area>div.inner{
+	width:990px;
+	height:100%;
+	margin:auto;
+	/* border:1px solid blue; */
+}
+/*中部：左 ul*/
+.yoho-header .middle-area>.inner>ul.nav-list{
+	width:280.06px;
+	height:90px;
+	float:left;
+	display:inline-block;
+	padding-top:45px;
+	/* border:1px solid yellow; */
+	box-sizing:border-box;
+}
+/*中部：左ul内4个li*/
+.yoho-header .middle-area>.inner>ul.nav-list>li{
+	float:left;
+	height:45px;
+	text-align:center;
+	padding:8px 13px 5px;
+	/* border:1px solid green; */
+}
+/*中部：左h5中文 行间距*/
+.yoho-header .middle-area>.inner>ul.nav-list li .name-cn{
+	line-height:17.6px;
+}
+/*中部：左h5英文 行间距*/
+.yoho-header .middle-area>.inner>ul.nav-list>li .name-en{
+	line-height:13.6px;
+}
+/*中部：左h5 a中文*/
+.yoho-header .middle-area>.inner>ul.nav-list li .name-cn a{
+	font-size:16px; 
+	color:#000;
+	display:inline-block;
+	height:17.6px;
+	line-height:17.6px;
+}
+/*中部：左h5 a英文*/
+.yoho-header .middle-area>.inner>ul.nav-list>li .name-en a{
+	font-size:12px;
+	color:#8e8e8e;
+	font-weight:normal;
+	display:inline-block;
+	height:13.6px;
+	line-height:13.6px;
+}
+/*中部：中logo*/
+  @keyframes change{
+     0%{
+       transform:rotateX(0deg);
+     }
+	 100%{
+		transform:rotateX(360deg);
+	 }
+  }
+.yoho-header .middle-area>.inner>.main-logo{
+	background:url(../img/header_img/logo-en.png) no-repeat 50%;
+	width:182px;
+	height:53px;
+	margin-top:22px;
+	position:absolute;
+	left:400px;
+	/*transform-origin:center center;*/
+	animation:change 1.5s linear 3s infinite;
+
+}
+.yoho-header .middle-area>.inner>.main-logo>.main-link{
+	display:block;
+	height:100%;
+	width:100%;
+}
+/*中部：右div*/
+.yoho-header .middle-area>.inner>.right-cart{
+	float:right;
+	width:396px;
+	height:48.8px;
+	padding-right:18px;
+	margin-top:40px;
+	/* border:1px solid green; */
+}
+/*中部：右div 内div*/
+.yoho-header .middle-area>.inner>.right-cart>.search{
+	width:320px;
+	height:28px;
+	box-sizing:border-box;
+	display:inline-block;
+}
+/*中部：右div 内div form*/
+.yoho-header .middle-area>.inner>.right-cart>.search>div{
+	/* overflow:hidden; */
+	width:320px;
+	height:28px;
+	box-sizing:border-box;
+	display:inline-block;
+}
+/*中部：右div 内div form input*/
+.yoho-header .middle-area>.inner>.right-cart>.search>div>input.skey{
+	width:240px;
+	height:28px;
+	line-height:28px;
+	color:#8e8e8e;
+	border:1px solid #ff88ae;
+	outline:none;
+	background:#fff;
+	box-sizing:border-box;
+	padding-left:10px;
+	position:relative;
+	top:-1.5px;
+	margin-left:0px;
+	margin-right:0px;
+}
+/*中部：右div 内div form a*/
+.yoho-header .middle-area>.inner>.right-cart>.search>div>a.search-btn{
+	background:#ff88ae url(../img/header_img/search.png) no-repeat 50%;
+	width:78px;
+	height:28px;
+	float:right;
+	border-left:1px solid transparent;
+	margin-left:0;
+}
+/*中部：右div 内div 关键词ul*/
+.yoho-header .middle-area>.inner>.right-cart>.search>ul.search-hot{
+	width:320px;
+	height:16px;
+	display:flex;
+	justify-content:space-between;
+}
+.yoho-header .middle-area>.inner>.right-cart>.search>ul.search-hot>li{
+	height:100%;
+}
+.yoho-header .middle-area>.inner>.right-cart>.search>ul.search-hot>li>a{
+	display:block;
+	height:16px;
+	line-height:18px;
+}
+/*中部：右div 内div 右div购物车图标*/
+.yoho-header .middle-area>.inner>.right-cart>div.go-cart{
+	width:30px;
+	height:30px;
+	float:right;
+	position:relative;
+	/* border:1px solid red; */
+}
+.yoho-header .middle-area>.inner>.right-cart>div.go-cart>a>span{
+	position:absolute;
+	background:url(../img/header_img/2.png) no-repeat;
+	width:27px;
+	height:20px;
+	margin:5px 0px;
+	/* border:1px solid blue; */
+}
+.yoho-header .middle-area>.inner>.right-cart>div.go-cart>div.small-cart{
+	width:378px;
+	position:absolute;
+	top:30px;
+	right:-14px;
+	z-index:1000;
+	background:#f8f8f8;
+	display:none;
+}
+.yoho-header .middle-area>.inner>.right-cart>div.go-cart>.small-cart>.empty-cart{
+	padding:280px 0 200px;
+	background:url(../img/header_img/empty_car.png) no-repeat 106px 132px;
+	text-align:center;
+}
+/*中部：右 购物车鼠标悬停*/
+.yoho-header .middle-area>.inner>.right-cart>div.go-cart:hover div.small-cart{
+	display:block;
+	z-index:2000;
+} 
+/******************************************************底部**************************************************/
+/*底部：外div*/
+.yoho-header .bottom-area{
+	background:#ff88ae;
+	width:100%;
+	height:40px;
+	position:relative;
+}
+/*底部：外div 内div*/
+.yoho-header .bottom-area>div.inner{
+	width:990px;
+	height:40px;
+	box-sizing:border-box;
+	margin:auto;
+	border:1px solid transparent;
+}
+.yoho-header .bottom-area>div.inner ul.girl{
+	display:block;
+	width:990px;
+	box-sizing:border-box;
+	border:1px solid transparent; 
+}
+.yoho-header .bottom-area>div.inner ul li{
+	display:inline-block;
+	height:40px;
+	line-height:40px;
+	box-sizing:border-box;
+	padding-right:46px;
+	/* border:1px solid green; */
+}
+.yoho-header .bottom-area>div.inner ul.girl>li{
+	margin-right:15px;	
+}
+
+.yoho-header .bottom-area>div.inner ul.girl a{
+	color:#fff;
+	font-size:14px;
+	line-height:13.6px;
+	display:inline-block;
+	height:17.6px;
+	position:relative;
+	/* border:1px solid yellow; */
+}
+.aShow{
+	border-bottom:2px solid #fff;
+}
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third{
+	width:100%;
+	height:410px;
+	position:absolute;
+	left:0;
+	top:40px;
+	box-sizing:border-box;
+	padding:30px 0;
+	background:#fff;
+	/* border:1px solid blue; */
+	z-index:900;
+}
+.yoho-header .bottom-area>div.inner ul li.contain-third div.center-content{
+	width:990px;
+	margin:auto;
+	/* border:1px solid black; */
+}
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third dl:first-child{
+	width:228px;
+	border-left:0;
+	padding-left:0;
+	/* border:1px solid purple; */
+}
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third dl{
+	float:left;
+	width:278px;
+	height:352px;
+	box-sizing:border-box;
+	border-left:1px solid #ccc;
+	padding:0 50px;
+	/* border:1px solid pink; */
+}
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third dl dt{
+	width:180px;
+	padding-bottom:10px;
+	margin-bottom:20px;
+	border-bottom:1px solid #000;
+	line-height:18px;
+}
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third dl dd{
+	line-height:14px;
+	height:14px;
+	margin-bottom:24px;
+}
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third dl dt a{
+	color:#000;
+}
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third dl dd a{
+	color:#a1a1a1;
+}
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third a.hot{
+	color:#e01;
+}
+/*底部：最右边 div*/
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third div.show-detail{
+	width:190px;
+	height:250px;
+	padding-right:0;
+	box-sizing:border-box;
+	padding-left:12px;
+	float:right;
+	/* border:1px solid red; */
+}
+/*底部：右 图片img*/
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third div.show-detail img{
+	width:174px;
+	height:155px;
+}
+/*底部：右 图片下 文字a*/
+.yoho-header .bottom-area>div.inner ul li.contain-third div.nav-third div.show-detail a.title{
+	width:100%;
+	color:#000;
+	font-size:14px;
+	text-align:center;
+	margin-top:90px;
+}
+
+
+
+

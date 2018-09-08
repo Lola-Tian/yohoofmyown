@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/register.css">
+ </head>
+ <body>
+ <!-- 注册头部 -->
+  <div class="register-head">
+	<div class="head-inner clearfix">
+		<p class="logo">
+			<a href="index.html">
+				<img src="img/login_img/logo.png">
+			</a>
+		</p>
+		<ul class="head-right clearfix">
+			<li>
+				<span>Hi~</span>
+				<a href="login.html">[请登录]</a>
+				<a href="#">[免费注册]</a>
+			</li>
+			<li class="multiple-options">
+				<span>
+					<a href="#">MY有货</a>
+				</span>
+				<span class="option-icon icon-down"></span>
+				<span class="option-icon icon-up" style="display:none"></span>
+				<div class="selects" style="display:none">
+					<a href="#">我的收藏</a>
+					<a href="#">优惠券</a>
+				</div>
+			</li>
+			<li>
+				<a href="#">订单中心</a>
+			</li>
+			<li class="multiple-options">
+				<span>
+					<a href="#">客户服务</a>
+				</span>
+				<span class="option-icon icon-down"></span>
+				<span class="option-icon icon-up" style="display:none"></span>
+				<div class="selects" style="display:none">
+					<a href="#">在线客服</a>
+					<a href="#">帮助中心</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+  </div>
+  <!-- 登录主体 -->
+  <div class="register-page passport-page yoho-page clearfix">
+	<div class="alert-div">
+		<div class="alert-bar">
+			<span><img src="">&nbsp;为保障账户安全与正常使用，依《网络安全法》相关要求，会员账号需绑定手机号。</span>
+			<span style="color:red">如您尚未绑定手机号，请尽快完成，</span>
+			感谢您对Yoho!Buy有货的理解与支持！
+		</div>
+	</div>
+	<div class="passport-cover">
+		<div class="cover-content">
+			<a href="#" target="_blank">
+				<img class="cover-img" src="img/login_img/boy.jpg">
+			</a>
+		</div>
+	</div>
+	<form method="post" id="form1" action="data/users/register.php">
+			<div class="content">
+				<p>
+					<label>用户名: &nbsp;&nbsp;
+						<input id="uname" name="uname">(必填,2个字符以上)
+					</label>
+				</p>
+				<p>
+					<label>密码: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input id="upwd1" name="upwd1" type="password">(必填,密码6~8位)
+					</label>
+				</p>
+				<p>
+					<label>确认密码: 
+						<input name="upwd2" type="password">(必填,与上述密码保持一致)
+					</label>
+				</p>
+				<p>
+					<label>电子邮件: 
+					<input id="email" name="email">(必填,必须符合邮件格式)
+					</label>
+				</p>
+				<p>
+					<label>QQ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<input id="qq" name="qq">(选填,但必须由5~11位数字组成)
+					</label>
+				 </p>
+				<p>
+					<label>手机号码: 
+						<input id="mobile" name="mobile">(选填,但必须符合中国手机号格式)
+					</label>
+				</p>
+				<p class="ag">
+					<label> <input name="agree" type="checkbox" checked>我已阅读并同意遵守本网站服务条款</label>
+				</p>
+				<p>
+					<input type="submit" value="注册" id="input">
+					<input type="reset" value="重置">
+				</p>
+			</div>
+		</form>
+  </div>
+  <div id="footer"></div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/register.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/jquery.validate.js"></script>
+  <script src="js/messages_zh.js"></script>
+ </body>
+</html>
+

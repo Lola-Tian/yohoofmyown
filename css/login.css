@@ -1,0 +1,364 @@
+div.login-head{
+	height:66px;
+	margin:0 0 20px;
+	border-bottom:2px solid #222;
+}
+div.login-head .head-inner{
+	width:990px;
+	height:100%;
+	margin:0 auto;
+}
+div.login-head .logo{
+	line-height:66px;
+	float:left;
+}
+.hide{
+	display:none;
+}
+.login-page .relative{
+	position:relative;
+}
+.login-page .right{
+	float:right;
+}
+.login-page .left{
+	float:left;
+}
+.center{
+	text-align:center;
+}
+/*清除浮动*/
+.clearfix:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+div.login-head .head-inner>.head-right{
+	float:right;
+	width:364.38px;
+	height:66px;
+	line-height:66px;
+}
+div.login-head .head-right li,div.login-head .head-right li a,div.login-head .head-right li span,div.login-head .head-inner li{
+	font-size:12px;
+	vertical-align:middle;
+}
+div.login-head .head-inner li{
+	display:inline-block;
+	padding:0 8px;
+	line-height:28px;
+	/* border:1px solid blue; */
+}
+/*鼠标悬停：下拉列表*/
+div.login-head .head-inner li.multiple-options{
+	position:relative;
+	box-sizing:border-box;
+	width:74px;
+	height:28px;
+}
+div.login-head .head-inner li.multiple-options div.selects{
+	position:absolute;
+	left:0;
+	width:74px;
+	background:#eaeceb;
+	z-index:9;
+}
+div.login-head .head-inner li.multiple-options div.selects>a{
+	display:block;
+	width:74px;
+	text-align:center;
+	border-top:1px solid #ddd;
+}
+div.login-head .head-right .multiple-options span,div.login-head .head-right .multiple-options span{
+	display:inline-block;
+	font-size:12px;
+	height:28px;
+	line-height:28px;
+	vartical-align:top;
+}
+div.login-head .head-right .multiple-options span{
+	position:relative;
+}
+div.login-head .head-right span.icon-down{
+	width:0;
+	border:6.2px solid transparent;
+	border-top-color:#000;
+	position:absolute;
+	top:12px;
+	right:2px;
+}
+div.login-head .head-right span.icon-up{
+	width:0;
+	border:6.2px solid transparent;
+	border-bottom-color:#000;
+	position:absolute;
+	top:-21px;
+	right:2px;
+}
+/*黑色边框以下登录主体*/
+div.login-page{
+	width:1076.8px;
+	height:733.6px;
+}
+div.login-page .alert-div{
+	width:100%;
+	height:36.6px;
+	font-size:12px;
+	text-align:center;
+}
+div.login-page .alert-div .alert-bar{
+	display:inline-block;
+	width:990px;
+	height:25px;
+	background-color:#f5f5f5;
+	line-height:25px;
+	overflow:hidden;
+	margin-top:10px;
+}
+/*左：图片部分*/
+div.login-page .passport-cover{
+	float:left;
+	margin:107px 0;
+	width:575px;
+}
+div.login-page .passport-cover .cover-content{
+	padding:50px 0;
+	width:100%;
+	height:318px;
+	border-right:1px solid #dfdfdf;
+}
+div.login-page .passport-cover .cover-content .cover-img{
+	display:block;
+	margin:0 auto;
+	margin-top:50px;
+	width:252px;
+	height:190px;
+}
+/*右：表单部分*/
+.login-page .content{
+	float:left;
+	margin-top:107px;
+	padding-left:85px;
+}
+.login-page div.switch-login-type{
+	width:270px;
+	height:46px;
+	margin-bottom:25px;
+	background-color:#fff;
+}
+.login-page .switch-login-type .type-desktop-bg,.login-page .switch-login-type .type-mobile-bg{
+	width:40px;
+	height:40px;
+	background-image:url(../img/login_img/sprite.passport.png);
+	background-size:595px 298px;
+	float:right;
+	cursor:pointer;
+}
+.login-page .switch-login-type .type-mobile-bg{
+	background-position:-369px -108px;
+} 
+.login-page .switch-login-type .type-desktop-bg{
+	background-position:-323px -108px;
+}
+.login-page .switch-login-type .type-tip{
+	width:120px;
+	height:30px;
+	background-image:url(../img/login_img/sprite.passport.png);
+	background-position:-323px -70px;
+	background-size:595px 298px;
+	float:right;
+}
+.login-page .tip-title{
+	color:#9b9b9b;
+	font-size:13px;
+}
+/*桌面登录*/
+.login-page .login-ul{
+	width:270px;
+	height:565px;
+}
+.login-page .login-ul>div>li{
+	margin-bottom:25px;
+}
+.login-page .title{
+	float:left;
+	font-size:20px;
+}
+.login-page .country-code{
+	color:#b9b9b9;
+}
+.login-page .country-code em{
+	font-style:normal;
+}
+.login-page .country-list{
+	position:absolute;
+	top:20px;
+	right:0;
+	z-index:1;
+	display:none;
+	padding:0 10px;
+	border:1px solid #000;
+	border-radius:5px;
+	background:#fff;
+	color:#000;
+}
+.login-page .desktop-login .switch{
+	width:100%;
+	height:27px;
+	background-image:url(../img/login_img/sprite.passport.png);
+	background-position:-323px 0;
+	background-size:595px 298px;
+	border-radius:13px;
+	font-size:14px;
+}
+.login-page .switch .left.selected{
+	background-image:url(../img/login_img/sprite.passport.png);
+	background-position:-323px -35px;
+	background-size:595px 298px;
+	color:#fff;
+}
+.login-page .switch .left{
+	width:146px;
+	height:27px;
+	text-align:center;
+	line-height:27px;
+	border-radius:13px;
+	position:absolute;
+	left:0;
+	cursor:pointer;
+}
+.login-page .switch .right{
+	width:146px;
+	height:27px;
+	text-align:center;
+	line-height:27px;
+	border-radius:13px;
+	position:absolute;
+	right:0;
+	cursor:pointer;
+}
+/*第一个输入框：邮箱手机*/
+.passport-page .input{
+	width:268px;
+	height:43px;
+	border:1px solid #dbdbdb;
+	color:rgba(0,0,0,.5);
+	text-indent:10px;
+	font-size:16px;
+	line-height:1.2;
+}
+/*登录,取消按钮*/
+.passport-page .btn{
+	width:40%;
+	height:40px;
+	background-color:#ff1901;
+	color:#fff;
+	text-align:center;
+	font-size:16px;
+	line-height:40px;
+	cursor:pointer;
+	border:none;
+	outline:none;
+}
+/*登录下面：图标*/
+.login-page .other-opts{
+	color:#b9b9b9;
+	font-size:14px;
+}
+.login-page .forget-passwod{
+	color:#b9b9b9;
+}
+.login-page .other-opts .fast-reg{
+	color:#ff1901;
+}
+/*最底部图标*/
+.login-page .third-party-login{
+	display:table;
+	width:100%;
+}
+.login-page .third-party-login a{
+	display:table-cell;
+	width:67px;
+	background-size:100% 100%;
+}
+.login-page .third-party-login .weixin{
+	background-image:url(../img/login_img/sprite.passport.png);
+	background-position:-527px -70px;
+	background-size:595px 298px;
+}
+.login-page .third-party-login .icon{
+	display:block;
+	margin:0 auto;
+	width:30px;
+	height:30px;
+}
+.login-page .third-party-login .weibo{
+	background-position:-565px -70px;
+}
+.login-page .third-party-login .weibo,.login-page .third-party-login .qq{
+	background-image:url(../img/login_img/sprite.passport.png);
+	background-size:595px 298px;
+}
+.login-page .third-party-login .alipay{
+	background-image:url(../img/login_img/sprite.passport.png);
+	background-position:-451px -70px;
+	background-size:595px 298px;
+}
+/*手机登录*/
+.login-page .qrcode-login-title{
+	margin-bottom:40px !important;
+	font-weight:bold;
+}
+.login-page .qrcode{
+	position:absolute;
+	height:140px;
+	width:140px;
+	top:0;
+}
+.login-page .qrcode-helper,.login-page .qrcode-overlay-success{
+	position:absolute;
+	background-image:url(../img/login_img/sprite.passport.png) !important;
+	background-size:595px 298px !important;
+}
+.login-page .qrcode-helper{
+	background-position:0 0 !important;
+	top:-14px;
+	right:-45px;
+	width:167px;
+	height:150px;
+}
+.login-page .qecode-hover{
+	position:absolute;
+	top:0;
+	left:0;
+	width:270px;
+	height:140px;
+}
+.login-page i.scan{
+	display:block;
+	width:30px;
+	height:29px;
+	background-image:url(../img/login_img/sprite.passport.png);
+	background-position:-477px -35px;
+	background-size:595px 298px;
+	float:left;
+	margin-right:15px;
+	margin-left:40px;
+}
+.login-page .scan-font{
+	color:#9b9b9b;
+	font-size:14px;
+	line-height:15px;
+}
+.login-page .download-link{
+	color:red;
+	font-size:13px;
+}
+.login-page .wcode{
+	width:140px;
+	height:140px;
+}
+#footer{
+	width:1076.8px;
+	overflow:hidden;
+}

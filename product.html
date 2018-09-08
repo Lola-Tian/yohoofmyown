@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/product.css">
+ </head>
+ <body>
+  <div class="main">
+	<header id="header"></header>
+	<div class="content">
+		<div class="top-area">
+			<!--上：图+店铺介绍-->
+			<img src="img/p_img/topbackground.png" alt="">
+			<div class="opt-wrap">
+				<div class="center-content">
+					<a href="javascript:;" data-bid=1 id="shop-index">
+						<span class="glyphicon glyphicon-home">&nbsp;店铺首页</span>
+					</a>
+					<a href="">
+						<span>店铺介绍</span>
+					</a>
+					<a href="">
+						<span class="glyphicon glyphicon-heart"></span>
+					</a>
+				</div>
+			</div>
+			<!--中：排序方式-->
+			<div class="sort-pager">
+				<a href="" class="sort-type">默认</a>
+				<a href="" class="sort-type">价格
+					<span class="glyphicon glyphicon-triangle-top move-top"></span>
+					<span class="glyphicon glyphicon-triangle-bottom move-btm"></span>
+				</a>
+				<a href="" class="sort-type">折扣
+					<span class="glyphicon glyphicon-triangle-top move-top"></span>
+					<span class="glyphicon glyphicon-triangle-bottom move-btm"></span>
+				</a>
+			</div>
+			<!--下：产品展示-->
+			<div id="product-list">
+				<div id="plist">
+					<ul id="show-list">
+						<!-- <li>
+							<a href="product_detail.html?cid=${cid}">
+								<img src="01b2dae7667df6138d761304d03e2794d8.jpg" alt="">
+							</a>
+							<p>
+								<a href="product_detail.html?cid=${cid}">连衣裙</a>
+								<span class="price">¥78</span>
+							</p>
+						</li> -->
+					</ul>
+					<!--页码-->
+					<div id="pages">
+						<!-- <a href="javascript:;" class="previous disabled">上一页</a>
+						<a href="javascript:;" class="current">1</a>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;" class="next">下一页</a> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer"></footer>
+  </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/header.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/product.js"></script>
+ </body>
+</html>

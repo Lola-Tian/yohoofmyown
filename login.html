@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/login.css">
+ </head>
+ <body>
+ <!-- 登录头部 -->
+  <div class="login-head">
+	<div class="head-inner clearfix">
+		<p class="logo">
+			<a href="index.html">
+				<img src="img/login_img/logo.png">
+			</a>
+		</p>
+		<ul class="head-right clearfix">
+			<li>
+				<span>Hi~</span>
+				<a href="#">[请登录]</a>
+				<a href="register.html">[免费注册]</a>
+			</li>
+			<li class="multiple-options">
+				<span>
+					<a href="#">MY有货</a>
+				</span>
+				<span class="option-icon icon-down"></span>
+				<span class="option-icon icon-up" style="display:none"></span>
+				<div class="selects" style="display:none">
+					<a href="#">我的收藏</a>
+					<a href="#">优惠券</a>
+				</div>
+			</li>
+			<li>
+				<a href="#">订单中心</a>
+			</li>
+			<li class="multiple-options">
+				<span>
+					<a href="#">客户服务</a>
+				</span>
+				<span class="option-icon icon-down"></span>
+				<span class="option-icon icon-up" style="display:none"></span>
+				<div class="selects" style="display:none">
+					<a href="#">在线客服</a>
+					<a href="#">帮助中心</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+  </div>
+  <!-- 登录主体 -->
+  <div class="login-page passport-page yoho-page clearfix">
+	<div class="alert-div">
+		<div class="alert-bar">
+			<span><img src="">&nbsp;为保障账户安全与正常使用，依《网络安全法》相关要求，会员账号需绑定手机号。</span>
+			<span style="color:red">如您尚未绑定手机号，请尽快完成，</span>
+			感谢您对Yoho!Buy有货的理解与支持！
+		</div>
+	</div>
+	<div class="passport-cover">
+		<div class="cover-content">
+			<a href="#" target="_blank">
+				<img class="cover-img" src="img/login_img/boy.jpg">
+			</a>
+		</div>
+	</div>
+	<form method="post" onsubmit="return false">
+			<div class="content">
+				<ul class="login-ul">
+					<div class="switch-login-type" data-type="mobileLogin">
+						<div id="device-bg" class="type-desktop-bg"></div>
+						<div class="type-tip tip-title">
+							<div id="device-tip" style="margin-left:15px;margin-top:8px">密码登录在这里</div>
+						</div>
+					</div>
+					<div class="desktop-login">
+						<li class="relative clearfix">
+							<h2 class="title">会员登录</h2>
+							<span class="country-code right" id="country-code">
+								<em id="pre-code">中国+86</em>
+								<span>
+									<img src="img/login_img/arrowbottom.png">
+								</span>
+								<ul id="country-list" class="country-list" style="display:none">
+									<li data-cc="+61">澳大利亚 +86</li>
+									<li data-cc="+82">韩国 +82</li>
+									<li data-cc="+1">加拿大 +1</li>
+									<li data-cc="+60">马来西亚 +60</li>
+									<li data-cc="+1">美国 +1</li>
+									<li data-cc="+86">日本 +81</li>
+									<li data-cc="+65">新加坡+65</li>
+									<li data-cc="+44">英国 +44</li>
+									<li data-cc="+86" selected>中国 +86</li>
+									<li data-cc="+853">中国澳门 +853</li>
+									<li data-cc="+886">中国台湾 +886</li>
+									<li data-cc="+852">中国香港 +852</li>
+								</ul>
+							</span>
+						</li>
+						<li class="relative">
+							<div class="switch">
+								<div class="left selected" data-type="passwordLogin">普通登录</div>
+								<div class="right" data-type="smsLogin">手机验证码登录</div>
+							</div>
+						</li>
+						<li class="relative password-login">
+							<input type="text" id="acount1" class="ephone input va" name="uname" placeholder="用户名" autocomplete="off">
+						</li>
+						<li class="relative password-login">
+							<input type="password" id="password" class="password input va" placeholder="密码" autocomplete="off" maxlength="20" name="upwd">
+							<span id="caps-lock" class="caps-lock hide">大写状态开启</span>
+						</li>
+						<li class="desk-login">
+							<input type="button" id="login-btn" value="登录" class="btn"></input>
+							<input type="reset" value="取消" class="btn">
+						</li>
+						<li class="other-opts">
+							<input type="checkbox" checked class="remember me">记住登录状态
+							<span class="right"> 
+								<a href="#" class="forget-password">忘记密码？</a>|
+								<a href="register.html" class="fast-reg">快速注册</a>
+							</span>
+						</li>
+						<li class="third-party-login">
+							<a href="#" data-type="4">
+								<span class="icon weixin" ></span>
+							</a>
+							<a href="#" data-type="3">
+								<span class="icon weibo"></span>
+							</a>
+							<a href="#" data-type="2">
+								<span class="icon alipay"></span>
+							</a>
+						</li>
+					</div>
+					<div class="mobile-login hide">
+						<li class="relative clearfix center qrcode-login-title">
+							<div>手机扫码，安全登录</div>
+						</li>
+						<li class="relative clearfix center">
+							<div id="qrcode-placeholder" style="width:270px;height:140px"></div>
+							<div id="qrcode-container" class="qrcode" style="left:65px">
+								<div>
+									<img alt="Scan me" class="wcode" src="img/login_img/wcode.png" style="display:block;">
+								</div>
+							</div>
+							<div id="qrcode-helper" class="qrcode-helper hide"></div>
+							<div id="qrcode-hover" class="qrcode-hover"></div>
+							<div id="qrcode-overlay"></div>
+						</li>
+						<li class="relative clearfix">
+							<div>
+								<i class="scan"></i>
+								<p class="scan-font">打开手机Yoho!Buy有货</p>
+								<p class="scan-font">扫一扫登录</p>
+							</div>
+						</li>
+						<li class="relative clearfix center">
+							<div>
+								<a href="#" class="download-link">下载Yoho!Buy有货手机APP</a>
+							</div>
+						</li>
+					</div>
+				</ul>
+			</div>
+		</form>
+  </div>
+  <div id="footer"></div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/footer.js"></script>
+ </body>
+</html>

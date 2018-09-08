@@ -1,0 +1,148 @@
+div.footer-main{
+	width:1076.8px;
+	height:339px;
+	background-color:pink;
+	box-sizing:border-box;
+	font-family:arial,SimHei,sans-serif;
+	font-size:12px;
+}
+div.footer-main>.foot{
+	width:1076.8px;
+	height:339px;
+}
+/*上：外div*/
+div.footer-main>.foot>.outerdiv1{
+	width:100%;
+	height:64px;
+	padding:20px 0 10px;
+	background-color:#000;
+	box-sizing:border-box;
+	padding-top:18px;
+}
+/*上：内div*/
+div.footer-main>.foot div.f-top{
+	width:990px;
+	height:34px;
+	line-height:34px;
+	margin:auto;
+}
+/*上：内div 红色字体*/
+div.footer-main>.foot div.f-top span.red{
+	color:red;
+}
+/*上：内div 加粗*/
+div.footer-main>.foot div.f-top span.bold{
+	font-weight:bold;
+	color:#fff;
+}
+/*上：左浮动*/
+div.footer-main>.foot div.f-top div.lf,.md,.rg{
+	float:left;
+	margin-right:20px;
+}
+/*上：右浮动*/
+div.footer-main>.foot div.f-top div.mrg{
+	float:right;
+}
+/*中：外div*/
+div.footer-main>.foot>.outerdiv2{
+	width:100%;
+	height:151px;
+	background:#000;
+}
+/*中：内div*/
+div.footer-main>.foot>.outerdiv2>div.f-middle{
+	width:990px;
+	height:151px;
+	box-sizing:border-box;
+	padding:15px 0;
+	border-top:1px solid #262626;
+	margin:auto;
+}
+div.footer-main>.foot>.outerdiv2>div.f-middle>div.md{
+	width:100%;
+	height:120px;
+}
+/*ul*/
+div.footer-main>.foot>.outerdiv2>div.f-middle>div.md>ul{
+	width:1089px;
+	height:120px;
+}
+/*li 左浮动*/
+div.footer-main>.foot>.outerdiv2>div.f-middle>div.md>ul>li{
+	float:left;
+	width:150px;
+	height:100%;
+}
+/*中：字体加粗白色*/
+div.footer-main>.foot>.outerdiv2>div.f-middle>div.md>ul>li p span{
+	color:#fff;
+	font-weight:bold;
+}
+div.footer-main>.foot>.outerdiv2>div.f-middle>div.md>ul>li p{
+	width:100%;
+	height:24px;
+	line-height:24px;
+}
+/*下：上 外div*/
+div.footer-main>.foot>.outerdiv3{
+	width:100%;
+	height:124px;
+	background:#000;
+	box-sizing:border-box;
+	padding:10px 0 14px;
+}
+div.footer-main>.foot>.outerdiv3>div.f-btm{
+	width:990px;
+	height:100px;
+	margin:auto;
+}
+/*下：上*/
+div.footer-main>.foot>.outerdiv3>div.f-btm>div.bt{
+	width:100%;
+	height:60px;
+	line-height:20px;
+	color:#666;
+	box-sizing:border-box;
+	padding-left:230px;
+	position:relative;
+}
+/*下：上 左侧图片 绝对定位*/
+div.footer-main>.foot>.outerdiv3>div.f-btm>div.bt>div.imgs{
+	width:217.34px;
+	height:39.6px;
+	margin-top:3px;
+	margin-right:8px;
+	position:absolute;
+	left:0;
+}
+/*下：上 右文字*/
+div.footer-main>.foot>.outerdiv3>div.f-btm>div.bt>p.fonts{
+	width:760px;
+	height:60px;
+	color:#666;
+	word-break:keep-all;
+}
+div.footer-main>.foot>.outerdiv3>div.f-btm>div.bt>p.fonts>span{
+	padding:0 10px;
+}
+div.footer-main>.foot>.outerdiv3>div.f-btm>div.bt>p.fonts>a.police{
+	width:193.78px;
+	height:20px;
+	box-sizing:border-box;
+	background:url(../img/footer_img/icon4.png) no-repeat 0 100%;
+	display:inline-block;
+	padding-left:25px;
+}
+/*下：下版权*/
+div.footer-main>.foot>.outerdiv3>div.f-btm>div.bb{
+	width:100%;
+	height:20px;
+	text-align:center;
+	margin-top:20px;
+	color:#666;
+}
+
+
+
+
